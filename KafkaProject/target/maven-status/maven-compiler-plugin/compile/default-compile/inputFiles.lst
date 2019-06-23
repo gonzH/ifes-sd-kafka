@@ -1,6 +1,8 @@
 F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\KafkaJsonSerializer.java
+F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\Postgres.java
 F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\ProducerKafka.java
 F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\ConsumerKafkaStart.java
+F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\ConnectPostgres.java
 F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\KafkaJsonDeserializer.java
 F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\CustomObject.java
 F:\GitDesktop\ifes-sd-kafka\KafkaProject\src\main\java\com\ifes\trabsd\DataGenerator.java

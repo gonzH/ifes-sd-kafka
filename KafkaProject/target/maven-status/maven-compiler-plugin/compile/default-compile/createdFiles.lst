@@ -1,8 +1,10 @@
+com\ifes\trabsd\Postgres.class
 com\ifes\trabsd\KafkaJsonDeserializer.class
 com\ifes\trabsd\DataGenerator.class
 com\ifes\trabsd\KafkaJsonSerializer.class
 com\ifes\trabsd\ConsumerKafka.class
 com\ifes\trabsd\ProducerKafkaStart.class
+com\ifes\trabsd\ConnectPostgres.class
 com\ifes\trabsd\ProducerKafka.class
 com\ifes\trabsd\ConsumerKafkaStart.class
 com\ifes\trabsd\CustomObject.class
