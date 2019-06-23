@@ -9,21 +9,20 @@ public class ConsumerKafkaStart {
     
     public static void main(String[] args) {
         
-        
         //consume and process consumed message
         final Consumer<String, CustomObject> consumer = consumerK.consume();
 
         boolean listening = true;
         int timer = 0;
         
-        //consumer listen 10 seconds till stop waiting for messages
+        //consumer listen 100 seconds till stop waiting for messages
         while(listening) {
             final ConsumerRecords<String, CustomObject> consumerRecords = consumer.poll(1000);
             
             if (consumerRecords.count() == 0) {
                 timer++;
                 
-                if (timer > 10) {
+                if (timer > 100) {
                     System.out.println("saiu");
                     listening = false;
                 }
@@ -35,7 +34,7 @@ public class ConsumerKafkaStart {
 
             consumer.commitAsync();
         }
-        
+
         consumer.close();
 
     }

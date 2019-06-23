@@ -1,5 +1,6 @@
 package com.ifes.trabsd;
 
+import java.io.FileNotFoundException;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
@@ -22,11 +23,17 @@ public class ProducerKafka {
         kafkaProducer = new KafkaProducer<String, CustomObject>(props, new StringSerializer(), new KafkaJsonSerializer());
     }
 
-    public void send(CustomObject res) {
-        kafkaProducer.send(new ProducerRecord<String, CustomObject>(this.topicName, res));
+    public void send(CustomObject data) {    
+
+        kafkaProducer.send(new ProducerRecord<String, CustomObject>(this.topicName, data));
         kafkaProducer.flush();
-        kafkaProducer.close();
+        
         System.out.println(".send() Done! ");
+    }
+    
+    public void close() {
+        kafkaProducer.close();
+        System.out.println("Producer closed!");
     }
 
 }
